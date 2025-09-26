@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #f5f1e3;
+    display:grid;
+    place-items:center;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:10px;
+    grid-auto-rows:min-content auto;
+    grid-template-areas: "h h h h h h h" 
+                         ". n n n n n ." ;
+}
+
+.bakgrunn {
+    position:absolute;
+}
+
+.navn {
+    grid-area: h;
+    text-align: center;
+    font-size:xxx-large;
+    color: #303633;
+}
+
+.navn > h1 {
+    margin:0;
+}
+
+.navbar {
+    grid-area: n;
+    text-align: center;
+    display: flex;
+    gap:.5rem;
+}
+
+.navbar a {
+    background-color: #FF7E6B;
+    color:#303633;
+    flex:1;
+    padding:.5rem;
+    border-radius: 20px;
+    border:1px solid black;
+}
+
+.bakgrunn {
+    /* height:100%; */
+}
+
+#c1 {
+    width: 150px;       /* Circle diameter (width = height) */
+    height: 150px;
+    background-color: #3498db; /* Circle color */
+    border-radius: 50%; /* Turns square into a circle */
+    position: absolute;
+    z-index: -1;
+    top:-200px;
+    left:100px;
+}
