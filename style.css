@@ -4,6 +4,11 @@ html, body {
     height: 100%;
 }
 
+@font-face {
+    font-family: Statik;
+    src:url(wg_statik.woff);
+}
+
 /* palette = https://coolors.co/303633-1b9aaa-ff7e6b-f5f1e3-ef6461 */
 
 body {
@@ -30,6 +35,8 @@ main {
     grid-area: h;
     text-align: center;
     font-size:xxx-large;
+    /* font-family:Statik; */
+    font-weight:100;
     color: #303633;
 }
 
@@ -52,6 +59,7 @@ main {
     padding:.5rem;
     border-radius: 20px;
     border:1px solid black;
+    z-index: 9999 !important;
 }
 
 .bakgrunn {
