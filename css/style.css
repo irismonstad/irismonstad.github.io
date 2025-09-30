@@ -6,7 +6,7 @@ html, body {
 
 @font-face {
     font-family: Statik;
-    src:url(fonts\wg_statik.woff);
+    src:url(fonts/wg_statik.woff);
 }
 
 /* palette = https://coolors.co/303633-1b9aaa-ff7e6b-f5f1e3-ef6461 */
