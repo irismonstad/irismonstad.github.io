@@ -4,11 +4,6 @@ html, body {
     height: 100%;
 }
 
-@font-face {
-    font-family: Statik;
-    src:url(fonts/wg_statik.woff);
-}
-
 /* palette = https://coolors.co/303633-1b9aaa-ff7e6b-f5f1e3-ef6461 */
 
 body {
@@ -35,8 +30,7 @@ main {
     grid-area: h;
     text-align: center;
     font-size:xxx-large;
-    /* font-family:Statik; */
-    font-weight:100;
+    font-weight:700;
     color: #303633;
 }
 
@@ -48,6 +42,8 @@ main {
     grid-area: n;
     text-align: center;
     display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
     gap:.5rem;
 }
 
@@ -80,38 +76,51 @@ main {
     top:3vw;
     left:18vw;
 }
-
 #c2 {
     width: 17vw;
     height: 17vw;
     top:18vw;
     left:-7vw;
 }
-
 #c3 {
     width:24vw;
     height:24vw;
     bottom:-10vw;
     left:10vw;
 }
-
 #c4 {
     width:15vw;
     height:15vw;
     bottom:11vw;
     right:35vw;
 }
-
 #c5 {
     width:30vw;
     height:30vw;
     top:-15vw;
     right:10vw;
 }
-
 #c6 {
     width:45vw;
     height:45vw;
     bottom:-20vw;
     right:-20vw;
+}
+
+@media screen and (hover:hover) {
+    .navbar a:hover {
+        background-color: #EF6461;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bakgrunn > div {
+        display: none;
+    }
+    .navn {
+        display:flex;
+        flex:wrap;
+        justify-content: center;
+        font-size:large;
+    }
 }
