@@ -3,8 +3,11 @@ const PLUSBUTTON = document.querySelector("#plus");
 const MINUSBUTTON = document.querySelector("#minus");
 let counter_value = 0; 
 VALUE.innerHTML = `<p>${counter_value}</p>`;
+<<<<<<< HEAD
 
 checkCookie();
+=======
+>>>>>>> 47c6da2c394c1438eb34f9d20db8370ea8c43397
 
 function moveCounter(direction) {
     if (direction === "minus") {
@@ -51,7 +54,11 @@ function getCookie(cname) {
 function checkCookie() {
     let count = getCookie("count");
     if (count != "") {
+<<<<<<< HEAD
         counter_value = Number(count);
+=======
+        counter_value = count;
+>>>>>>> 47c6da2c394c1438eb34f9d20db8370ea8c43397
         VALUE.innerHTML = `<p>${counter_value}</p>`;
     } 
     else {
