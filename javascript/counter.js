@@ -2,7 +2,7 @@ const VALUE = document.querySelector("#value");
 const PLUSBUTTON = document.querySelector("#plus");
 const MINUSBUTTON = document.querySelector("#minus");
 let counter_value = 0; 
-VALUE.innerHTML = `<p>${counter_value}</p>`;
+// VALUE.innerHTML = `<p>${counter_value}</p>`;
 
 function moveCounter(direction) {
     if (direction === "minus") {
